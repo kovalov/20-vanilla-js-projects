@@ -8,6 +8,7 @@
 	--cta-font-color: #FFFFFF;
 	--cta-bg-color: #84C7AE;
 	--main-font-family: 'Karla', sans-serif;
+	--danger-color: #E4887C;
 }
 
 *,
@@ -59,7 +60,7 @@ body {
 
 .login-form__input-message {
 	font-size: 1rem;
-	color: var(--paragraph-color);
+	color: var(--danger-color);
 }
 
 .login-form__user-input {
@@ -108,7 +109,11 @@ body {
 }
 
 .hidden {
-	/* visibility:hidden; */
+	visibility:hidden;
+}
+
+.danger {
+	border-color: var(--danger-color);
 }
 
 @media (max-width: 768px) {
