@@ -5,11 +5,37 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<title>Document</title>
 </head>
 
 <body>
+	<div class="login-card">
+		<h2 class="login-card__heading">
+			Create An Account
+		</h2>
+		<p class="login-card__description">
+			Create an account to enjoy all the services </br>without any ads for free!
+		</p>
+		<form class="login-form">
+			<div class="login-form__group">
+				<input type="email" placeholder="Email Address" class="login-form__user-input login-form__email">
+				<small class="login-form__input-message hidden">Error Message</small>
+			</div>
+			<div class="login-form__group">
+				<input type="password" placeholder="Password" class="login-form__user-input  login-form__password">
+				<small class="login-form__input-message hidden">Error Message</small>
+			</div>
+			<button type="submit" class="login-form__button">Create Account</button>
+		</form>
+		<small class="login-card__account-information">
+			Already Have An Account? <a href="#" class="login-card__link">Sign In</a>
+		</small>
+	</div>
+
 	<script src="app.js"></script>
 </body>
 
